@@ -1,1 +1,1 @@
-https://apriluk91.github.io/goit-markup-hw-05/
+https://apriluk91.github.io/goit-markup-hw-06/
