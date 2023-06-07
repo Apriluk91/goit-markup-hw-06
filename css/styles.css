@@ -54,6 +54,11 @@ img {
   display: block;
 }
 
+label {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -725,4 +730,100 @@ img {
   background-color: var(--snow);
   border-radius: 50%;
   cursor: pointer;
+}
+
+.modal-styles {
+  padding: 0px 40px 20px 40px;
+}
+
+.modal-main-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.order-label-styles {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 1);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.order-input-position {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.order-input-styles {
+  width: 448px;
+  height: 40px;
+  padding-block: 12px;
+  padding-left: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.order-textarea {
+  display: block;
+  width: 448px;
+  height: 138px;
+  margin-top: 4px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.order-placeholder-style::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.order-svg-style {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 12px;
+}
+
+.order-rodo {
+  display: inline;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-inline: 40px;
+}
+
+.rodo-text-style {
+  display: inline;
+  padding-left: 7px;
+}
+
+.rodo-link {
+  text-decoration: underline;
+  color: var(--blue-sky);
+}
+
+.order-rodo-btn {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  margin: 30px 164px 40px 164px;
+  color: var(--snow);
+  background-color: var(--blue-sky);
 }
