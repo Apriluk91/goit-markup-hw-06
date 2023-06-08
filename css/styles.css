@@ -760,9 +760,6 @@ label {
   display: block;
   position: relative;
   margin-top: 4px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
 }
 
 .order-input-styles {
@@ -772,6 +769,18 @@ label {
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+  outline: transparent;
+}
+
+.order-input-position:hover,
+.order-input-position:focus-within,
+.order-input-styles:focus,
+.order-input-styles:hover {
+  fill: var(--blue-sky);
+  border-color: var(--blue-sky);
 }
 
 .order-textarea {
@@ -786,6 +795,12 @@ label {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
+  outline: transparent;
+}
+
+.order-textarea:focus,
+:hover {
+  border-color: var(--blue-sky);
 }
 
 .order-placeholder-style::placeholder {
@@ -803,15 +818,43 @@ label {
 }
 
 .order-rodo {
-  display: inline;
+  display: block;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
-  padding-inline: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--gray);
+  text-align: center;
+  padding-left: 7px;
+}
+
+.rodo-checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.rodo-checkbox-icon {
+  display: inline-block;
+  border: 2px solid var(--black);
+  border-radius: 2px;
+  vertical-align: sub;
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.rodo-svg-style {
+  display: block;
+  width: 16px;
+  height: 15px;
 }
 
 .rodo-text-style {
   display: inline;
-  padding-left: 7px;
+  margin-left: 8px;
 }
 
 .rodo-link {
@@ -820,10 +863,12 @@ label {
 }
 
 .order-rodo-btn {
+  display: block;
   width: 200px;
   height: 50px;
-  text-align: center;
-  margin: 30px 164px 40px 164px;
+  margin-inline: auto;
+  margin-bottom: 40px;
+  cursor: pointer;
   color: var(--snow);
   background-color: var(--blue-sky);
 }
