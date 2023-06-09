@@ -824,18 +824,16 @@ label {
 .order-rodo {
   display: block;
   align-items: center;
-  margin-top: 20px;
   margin-bottom: 30px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--gray);
   text-align: center;
-  padding-left: 7px;
+  cursor: pointer;
+  color: var(--gray);
 }
 
-.rodo-checkbox {
+.rodo-accept {
   position: absolute;
   appearance: none;
 }
@@ -854,11 +852,17 @@ label {
   display: block;
   width: 16px;
   height: 15px;
+  fill: var(--snow);
 }
 
 .rodo-text-style {
   display: inline;
   margin-left: 8px;
+}
+
+.checkbox-input:checked + .rodo-checkbox-icon {
+  border-color: yellow;
+  background-color: black;
 }
 
 .rodo-link {
@@ -875,4 +879,9 @@ label {
   cursor: pointer;
   color: var(--snow);
   background-color: var(--blue-sky);
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
