@@ -830,7 +830,6 @@ label {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: center;
-  cursor: pointer;
   color: var(--gray);
 }
 
@@ -841,7 +840,7 @@ label {
 
 .rodo-checkbox-icon {
   display: inline-block;
-  border: 2px solid var(--black);
+  border: 2px solid var(--nearly-black);
   border-radius: 2px;
   vertical-align: sub;
   transition-property: background-color, border-color;
@@ -861,7 +860,7 @@ label {
   margin-left: 8px;
 }
 
-.checkbox-input:checked + .rodo-checkbox-icon {
+.rodo-accept:checked + .rodo-checkbox-icon {
   border-color: var(--blue-sky);
   background-color: var(--blue-sky);
 }
