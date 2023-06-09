@@ -715,7 +715,7 @@ label {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
+  height: 598px;
   background-color: var(--snow);
   border-radius: 4px;
   box-shadow: 0px 2px 1px #00000033, 0px 1px 1px #00000024,
@@ -738,7 +738,7 @@ label {
 }
 
 .modal-styles {
-  padding: 0px 40px 20px 40px;
+  padding: 40px;
 }
 
 .modal-main-text {
@@ -747,7 +747,6 @@ label {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 40px;
   margin-bottom: 12px;
 }
 
@@ -825,6 +824,7 @@ label {
 .order-rodo {
   display: block;
   align-items: center;
+  margin-top: 20px;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
@@ -875,7 +875,6 @@ label {
   width: 200px;
   height: 50px;
   margin-inline: auto;
-  margin-bottom: 40px;
   cursor: pointer;
   color: var(--snow);
   background-color: var(--blue-sky);
