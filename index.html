@@ -377,9 +377,8 @@
       </section>
     </main>
     <footer>
-      <div class="container">
-        <ul class="footer-flex">
-          <li>
+      <div class="container footer-flex">
+        <div>
             <p class="logo-fonts-footer">
              <span class="logo-color">Web</span><span class="logo-color-footer">Studio</span>
             </p>
@@ -387,11 +386,11 @@
               <a class="adress-two" href="mailto:info@example.com">info@example.com</a> 
               <br/>
               <a class="adress-two" href="tel:+48111111111">+48 111 111 111</a>
-          </li>
-          <li class="footer-layout">             
-             <h3 class="footer-text">DOŁĄCZ DO NAS</h3>
-             <ul class="footer-box">
-               <li class="footer-list">
+       </div>
+       <div class="join-position">         
+         <h3 class="footer-text">DOŁĄCZ DO NAS</h3>
+               <ul class="footer-box">
+                <li class="footer-list">
                  <a class="footer-link" href="/">
                   <svg class="svg-footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
@@ -413,18 +412,20 @@
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg></a>
             </li>
-            </ul>
-        </li>
-         <li class="footer-join-newsletter">
-              <label class="footer-label footer-text-two">
-                Zapisz się do newslettera
+          </ul>
+        </div>
+        <div>    
+          <form class="newsletter-position">
+              <label>
+                <h3 class="footer-text-newsletter">Zapisz się do newslettera</h3>
                 <input class="footer-input" type="email" name="footeruseremail" placeholder="E-mail" required/>
               </label>
-              <button class="btn-footer-input" type="submit">Zapisz się
+              <button class="btn-footer-input" type="submit">
+                Zapisz się
                 <svg class="btn-footer-icon" width="24" height="24"><use href="./images/icons.svg#icon-icon-send"></use></svg>
               </button>          
-          </li>
-      </ul> 
+          </form>
+        </div>
     </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -459,8 +460,7 @@
 </label>
      <label class="order-label-styles" for="ordercomment">Komentarz
       <textarea placeholder="Wprowadź tekst" class="order-textarea order-placeholder-style" name="ordercomment"></textarea>
-  </label>
-      
+  </label>   
        <label class="order-rodo" for="orderrodo">
       <input type="checkbox" name="orderrodo" class="rodo-checkbox" required>
       <span class="rodo-checkbox-icon">

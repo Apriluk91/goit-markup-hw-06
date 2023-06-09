@@ -23,6 +23,9 @@ header {
 }
 
 footer {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--main-theme);
 }
 
@@ -554,9 +557,8 @@ label {
 
 .footer-flex {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0px;
+  align-items: baseline;
+  justify-content: center;
 }
 
 .footer-layout {
@@ -593,6 +595,9 @@ label {
   transition: color 250ms var(--cubic-bezier);
 }
 
+.join-position {
+  margin-left: 70px;
+}
 .footer-text {
   font-weight: 700;
   font-size: 14px;
@@ -636,21 +641,18 @@ label {
   transition: background-color 250ms var(--cubic-bezier);
 }
 
-.footer-join-newsletter {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .footer-label {
-  display: flex;
-  flex-direction: column;
+  width: 358px;
   margin-left: 78px;
-  margin-top: 58px;
-  margin-bottom: 94px;
 }
 
-.footer-text-two {
+.newsletter-position {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 76px;
+}
+
+.footer-text-newsletter {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -659,14 +661,15 @@ label {
 }
 
 .footer-input {
+  box-sizing: border-box;
+  margin-top: 20px;
   width: 358px;
   height: 50px;
+  padding: 16px 0px 16px 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: var(--main-theme);
   color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
-  margin-top: 20px;
 }
 
 .btn-footer-input {
@@ -674,11 +677,12 @@ label {
   font-size: 16px;
   line-height: 1.88;
   color: var(--snow);
+  cursor: pointer;
   width: 200px;
   height: 50px;
   margin-left: 12px;
-  background-color: var(--blue-sky);
   border: none;
+  background-color: var(--blue-sky);
   padding: 10px 28px 10px 42px;
 }
 
